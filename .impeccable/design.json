@@ -1,0 +1,381 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-06T02:05:04.402Z",
+  "title": "Design System: LUDOVIK — Estúdio Digital",
+  "extensions": {
+    "colorMeta": {
+      "bg": {
+        "role": "neutral",
+        "displayName": "Preto de base",
+        "canonical": "#08080c",
+        "tonalRamp": [
+          "oklch(15.00% 0.00904 285.14)",
+          "oklch(26.43% 0.00904 285.14)",
+          "oklch(37.86% 0.00904 285.14)",
+          "oklch(49.29% 0.00904 285.14)",
+          "oklch(60.71% 0.00904 285.14)",
+          "oklch(72.14% 0.00904 285.14)",
+          "oklch(83.57% 0.00904 285.14)",
+          "oklch(95.00% 0.00904 285.14)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Superfície",
+        "canonical": "#101017",
+        "tonalRamp": [
+          "oklch(15.00% 0.01438 284.83)",
+          "oklch(26.43% 0.01438 284.83)",
+          "oklch(37.86% 0.01438 284.83)",
+          "oklch(49.29% 0.01438 284.83)",
+          "oklch(60.71% 0.01438 284.83)",
+          "oklch(72.14% 0.01438 284.83)",
+          "oklch(83.57% 0.01438 284.83)",
+          "oklch(95.00% 0.01438 284.83)"
+        ]
+      },
+      "surface-hover": {
+        "role": "neutral",
+        "displayName": "Superfície declarada sem uso",
+        "canonical": "#15101d",
+        "tonalRamp": [
+          "oklch(15.00% 0.02695 301.50)",
+          "oklch(26.43% 0.02695 301.50)",
+          "oklch(37.86% 0.02695 301.50)",
+          "oklch(49.29% 0.02695 301.50)",
+          "oklch(60.71% 0.02695 301.50)",
+          "oklch(72.14% 0.02695 301.50)",
+          "oklch(83.57% 0.02695 301.50)",
+          "oklch(95.00% 0.02695 301.50)"
+        ]
+      },
+      "purple": {
+        "role": "primary",
+        "displayName": "Roxo de ação",
+        "canonical": "#a63dff",
+        "tonalRamp": [
+          "oklch(15.00% 0.26636 303.73)",
+          "oklch(26.43% 0.26636 303.73)",
+          "oklch(37.86% 0.26636 303.73)",
+          "oklch(49.29% 0.26636 303.73)",
+          "oklch(60.71% 0.26636 303.73)",
+          "oklch(72.14% 0.26636 303.73)",
+          "oklch(83.57% 0.26636 303.73)",
+          "oklch(95.00% 0.26636 303.73)"
+        ]
+      },
+      "purple-hover": {
+        "role": "primary",
+        "displayName": "Roxo de interação",
+        "canonical": "#b65fff",
+        "tonalRamp": [
+          "oklch(15.00% 0.23124 306.03)",
+          "oklch(26.43% 0.23124 306.03)",
+          "oklch(37.86% 0.23124 306.03)",
+          "oklch(49.29% 0.23124 306.03)",
+          "oklch(60.71% 0.23124 306.03)",
+          "oklch(72.14% 0.23124 306.03)",
+          "oklch(83.57% 0.23124 306.03)",
+          "oklch(95.00% 0.23124 306.03)"
+        ]
+      },
+      "lilac": {
+        "role": "secondary",
+        "displayName": "Lilás de leitura",
+        "canonical": "#c3a5ff",
+        "tonalRamp": [
+          "oklch(15.00% 0.12878 298.72)",
+          "oklch(26.43% 0.12878 298.72)",
+          "oklch(37.86% 0.12878 298.72)",
+          "oklch(49.29% 0.12878 298.72)",
+          "oklch(60.71% 0.12878 298.72)",
+          "oklch(72.14% 0.12878 298.72)",
+          "oklch(83.57% 0.12878 298.72)",
+          "oklch(95.00% 0.12878 298.72)"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Branco de leitura",
+        "canonical": "#f5f4f8",
+        "tonalRamp": [
+          "oklch(15.00% 0.00540 297.73)",
+          "oklch(26.43% 0.00540 297.73)",
+          "oklch(37.86% 0.00540 297.73)",
+          "oklch(49.29% 0.00540 297.73)",
+          "oklch(60.71% 0.00540 297.73)",
+          "oklch(72.14% 0.00540 297.73)",
+          "oklch(83.57% 0.00540 297.73)",
+          "oklch(95.00% 0.00540 297.73)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Cinza de apoio",
+        "canonical": "#a4a2af",
+        "tonalRamp": [
+          "oklch(15.00% 0.01876 292.99)",
+          "oklch(26.43% 0.01876 292.99)",
+          "oklch(37.86% 0.01876 292.99)",
+          "oklch(49.29% 0.01876 292.99)",
+          "oklch(60.71% 0.01876 292.99)",
+          "oklch(72.14% 0.01876 292.99)",
+          "oklch(83.57% 0.01876 292.99)",
+          "oklch(95.00% 0.01876 292.99)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Linha",
+        "canonical": "#27252f",
+        "tonalRamp": [
+          "oklch(15.00% 0.01854 294.30)",
+          "oklch(26.43% 0.01854 294.30)",
+          "oklch(37.86% 0.01854 294.30)",
+          "oklch(49.29% 0.01854 294.30)",
+          "oklch(60.71% 0.01854 294.30)",
+          "oklch(72.14% 0.01854 294.30)",
+          "oklch(83.57% 0.01854 294.30)",
+          "oklch(95.00% 0.01854 294.30)"
+        ]
+      },
+      "soft-line": {
+        "role": "neutral",
+        "displayName": "Linha discreta",
+        "canonical": "#1c1a24",
+        "tonalRamp": [
+          "oklch(15.00% 0.01942 293.95)",
+          "oklch(26.43% 0.01942 293.95)",
+          "oklch(37.86% 0.01942 293.95)",
+          "oklch(49.29% 0.01942 293.95)",
+          "oklch(60.71% 0.01942 293.95)",
+          "oklch(72.14% 0.01942 293.95)",
+          "oklch(83.57% 0.01942 293.95)",
+          "oklch(95.00% 0.01942 293.95)"
+        ]
+      },
+      "ink-on-purple": {
+        "role": "neutral",
+        "displayName": "Tinta sobre roxo",
+        "canonical": "#08080c",
+        "tonalRamp": [
+          "oklch(15.00% 0.00904 285.14)",
+          "oklch(26.43% 0.00904 285.14)",
+          "oklch(37.86% 0.00904 285.14)",
+          "oklch(49.29% 0.00904 285.14)",
+          "oklch(60.71% 0.00904 285.14)",
+          "oklch(72.14% 0.00904 285.14)",
+          "oklch(83.57% 0.00904 285.14)",
+          "oklch(95.00% 0.00904 285.14)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display do hero",
+        "purpose": "Título de abertura; as substituições responsivas estão no DESIGN.md."
+      },
+      "headline": {
+        "displayName": "Título de seção",
+        "purpose": "h2 base; variantes de manifesto, sobre e rodapé são locais."
+      },
+      "title": {
+        "displayName": "Título de serviço",
+        "purpose": "Linhas editoriais expansíveis."
+      },
+      "body": {
+        "displayName": "Corpo",
+        "purpose": "Base de leitura; parágrafos locais ajustam tamanho e entrelinha."
+      },
+      "label": {
+        "displayName": "Rótulo de ação",
+        "purpose": "Texto dos botões."
+      },
+      "serif": {
+        "displayName": "Ênfase serifada",
+        "purpose": "Instrument Serif itálica; tamanho herdado ou definido pelo componente."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.22, 1, .36, 1)",
+        "purpose": "Easing CSS compartilhado."
+      },
+      {
+        "name": "button-color",
+        "value": ".25s",
+        "purpose": "Fundo e cor do botão principal."
+      },
+      {
+        "name": "button-transform",
+        "value": ".4s",
+        "purpose": "Deslocamento do botão e seta."
+      },
+      {
+        "name": "carousel-transform",
+        "value": ".85s",
+        "purpose": "Transformação entre posições do carrossel."
+      },
+      {
+        "name": "carousel-tone",
+        "value": ".8s",
+        "purpose": "Opacidade e brilho entre posições do carrossel."
+      },
+      {
+        "name": "sculpture-float",
+        "value": "9s ease-in-out infinite",
+        "purpose": "Flutuação de -18px e rotação entre -2deg e 2deg."
+      },
+      {
+        "name": "footer-light",
+        "value": "15s ease-in-out infinite alternate",
+        "purpose": "Luz lateral varia de translateY(-50px)/opacity .5 a translateY(90px)/opacity 1."
+      },
+      {
+        "name": "scroll-reveal",
+        "value": ".85s power3.out",
+        "purpose": "GSAP: 28px até 0, uma vez em top 92%."
+      },
+      {
+        "name": "hero-entry",
+        "value": "1.15s power4.out; stagger .1s",
+        "purpose": "Linhas do hero quando scrollY < 80."
+      },
+      {
+        "name": "parallax",
+        "value": "y:90; rotation:5; scrub:1",
+        "purpose": "GSAP da arte, do topo ao fim do hero."
+      },
+      {
+        "name": "lenis",
+        "value": "duration:1.05; smoothWheel:true; syncTouch:false; anchors.offset:-96",
+        "purpose": "Somente ponteiro fino e movimento permitido."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation-duration:.01ms; animation-iteration-count:1; transition-duration:.01ms; scroll-behavior:auto",
+        "purpose": "Em reduce, CSS também remove a flutuação; GSAP e Lenis não iniciam os efeitos."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide",
+        "value": "(min-width: 1600px)"
+      },
+      {
+        "name": "compact-desktop",
+        "value": "(max-width: 1150px)"
+      },
+      {
+        "name": "tablet",
+        "value": "(max-width: 900px)"
+      },
+      {
+        "name": "mobile",
+        "value": "(max-width: 767px)"
+      },
+      {
+        "name": "narrow-mobile",
+        "value": "(max-width: 359px)"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Botão principal",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Contato direto com seta e fundo roxo.",
+      "html": "<a class=\"ds-button-primary ds-focus\" href=\"#\">Conversar no WhatsApp<svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"M7 7h10v10M7 17 17 7\"/></svg></a>",
+      "css": ".ds-button-primary{display:inline-flex;align-items:center;justify-content:center;gap:24px;min-height:54px;padding:15px 25px;border-radius:4px;font-size:14px;line-height:1.4;font-weight:500;text-decoration:none;font-family:var(--font-grotesk),sans-serif;transition:background .25s,color .25s,transform .4s var(--ease);background:var(--purple);color:var(--ink-on-purple)}.ds-button-primary svg{transition:transform .4s var(--ease)}.ds-button-primary:hover{background:var(--purple-hover);transform:translateY(-2px)}.ds-button-primary:hover svg{transform:translate(2px,-2px)}.ds-focus:focus-visible{outline:2px solid var(--lilac);outline-offset:6px}@media(prefers-reduced-motion:reduce){.ds-button-primary,.ds-button-primary svg{transition-duration:.01ms}}"
+    },
+    {
+      "name": "Botão secundário",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Link de apoio com borda fina.",
+      "html": "<a class=\"ds-button-secondary ds-focus\" href=\"#\">Voltar ao início<svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"M7 7h10v10M7 17 17 7\"/></svg></a>",
+      "css": ".ds-button-secondary{display:inline-flex;align-items:center;justify-content:center;gap:24px;min-height:54px;padding:15px 25px;border-radius:4px;font-size:14px;line-height:1.4;font-weight:500;text-decoration:none;font-family:var(--font-grotesk),sans-serif;transition:background .25s,color .25s,transform .4s var(--ease);color:var(--text);border:1px solid var(--line)}.ds-button-secondary:hover{border-color:var(--lilac);color:var(--lilac)}.ds-focus:focus-visible{outline:2px solid var(--lilac);outline-offset:6px}@media(prefers-reduced-motion:reduce){.ds-button-secondary{transition-duration:.01ms}}"
+    },
+    {
+      "name": "Controle circular",
+      "kind": "button",
+      "refersTo": "icon-button",
+      "description": "Primitivo circular; o carrossel reduz o tamanho para 46px e 44px no mobile.",
+      "html": "<button class=\"ds-icon ds-focus\" aria-label=\"Próximo projeto\"><svg width=\"21\" height=\"21\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"M5 12h14m-7-7 7 7-7 7\"/></svg></button>",
+      "css": ".ds-icon{width:52px;height:52px;border:1px solid var(--line);border-radius:50%;background:transparent;color:var(--text);display:grid;place-items:center;cursor:pointer;transition:border-color .3s,background .3s,color .3s}.ds-icon:hover{background:var(--lilac);color:var(--bg);border-color:var(--lilac)}.ds-icon:disabled{opacity:.4;cursor:not-allowed}.ds-focus:focus-visible{outline:2px solid var(--lilac);outline-offset:6px}@media(prefers-reduced-motion:reduce){.ds-icon{transition-duration:.01ms}}"
+    },
+    {
+      "name": "Link textual",
+      "kind": "button",
+      "description": "Ação editorial com sublinhado parcial expansível.",
+      "html": "<a class=\"ds-text-link ds-focus\" href=\"#\">Ver projeto<svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"M7 7h10v10M7 17 17 7\"/></svg></a>",
+      "css": ".ds-text-link{display:inline-flex;align-items:center;justify-content:space-between;gap:16px;min-height:44px;font-size:14px;position:relative;color:var(--text);text-decoration:none;font-family:var(--font-grotesk),sans-serif;}.ds-text-link:after{content:'';position:absolute;bottom:5px;left:0;width:100%;height:1px;background:currentColor;transform:scaleX(.32);transform-origin:left;transition:transform .45s var(--ease)}.ds-text-link:hover:after{transform:scaleX(1)}.ds-text-link svg{transition:transform .4s var(--ease)}.ds-text-link:hover svg{transform:translate(2px,-2px)}.ds-focus:focus-visible{outline:2px solid var(--lilac);outline-offset:6px}@media(prefers-reduced-motion:reduce){.ds-text-link:after,.ds-text-link svg{transition-duration:.01ms}}"
+    },
+    {
+      "name": "Navegação desktop",
+      "kind": "nav",
+      "description": "Links de apoio com linha de hover; recorte do cabeçalho, sem replicar posição fixa.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Navegação principal\"><a class=\"ds-focus\" href=\"#servicos\">Serviços</a><a class=\"ds-focus\" href=\"#projetos\">Projetos</a><a class=\"ds-focus\" href=\"#processo\">Processo</a><a class=\"ds-focus\" href=\"#sobre\">Sobre</a></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;gap:33px;font-family:var(--font-grotesk),sans-serif;}.ds-nav a{position:relative;color:var(--muted);padding-block:12px;font-size:13px;text-decoration:none;transition:color .25s}.ds-nav a:after{content:'';position:absolute;inset:auto 0 5px;height:1px;background:var(--lilac);transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}.ds-nav a:hover{color:var(--text)}.ds-nav a:hover:after{transform:scaleX(1)}.ds-focus:focus-visible{outline:2px solid var(--lilac);outline-offset:6px}@media(prefers-reduced-motion:reduce){.ds-nav a,.ds-nav a:after{transition-duration:.01ms}}"
+    },
+    {
+      "name": "Serviço editorial",
+      "kind": "custom",
+      "refersTo": "service-row",
+      "description": "Recorte nativo de uma linha expansível; preserva semântica details/summary e estados.",
+      "html": "<details class=\"ds-service\"><summary class=\"ds-focus\"><span class=\"ds-number\">01</span><h3>Landing pages</h3><span class=\"ds-short\">Uma página. Uma mensagem clara. Um próximo passo.</span><span class=\"ds-service-arrow\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"M7 7h10v10M7 17 17 7\"/></svg></span></summary><div class=\"ds-service-body\">Páginas que organizam sua oferta e conduzem o visitante até a ação que importa para o seu negócio.</div></details>",
+      "css": ".ds-service{border-block:1px solid var(--line);color:var(--text);font-family:var(--font-grotesk),sans-serif;}.ds-service summary{display:grid;grid-template-columns:60px 1fr 340px 42px;align-items:center;gap:16px;list-style:none;cursor:pointer;padding:32px 0;min-height:116px;transition:padding .45s var(--ease)}.ds-service summary::-webkit-details-marker{display:none}.ds-number{font-size:11px;line-height:1.6;color:var(--muted);font-variant-numeric:tabular-nums;letter-spacing:.02em}.ds-service h3{margin:0;font-size:clamp(25px,2.45vw,38px);font-weight:400;line-height:1.12;letter-spacing:-.035em;transition:color .3s}.ds-short{color:var(--muted);font-size:13px;line-height:1.75;max-width:295px}.ds-service-arrow{justify-self:end}.ds-service[open] h3,.ds-service[open] .ds-service-arrow{color:var(--lilac)}.ds-service-body{padding:0 60px 40px 76px;color:var(--muted);font-size:16px;line-height:1.8;max-width:520px}.ds-focus:focus-visible{outline:2px solid var(--lilac);outline-offset:6px}@media(hover:hover){.ds-service:hover summary{padding-inline:16px}.ds-service:hover h3{color:var(--lilac)}}@media(max-width:767px){.ds-service summary{grid-template-columns:26px 1fr 24px;gap:12px;padding-block:26px;min-height:100px}.ds-service h3{font-size:clamp(22px,5.8vw,30px)}.ds-short{grid-column:2;grid-row:2;font-size:11px;max-width:260px}.ds-service-arrow{grid-column:3;grid-row:1 / span 2}.ds-service-body{padding:0 0 28px 38px;font-size:14px}}@media(prefers-reduced-motion:reduce){.ds-service summary,.ds-service h3{transition-duration:.01ms}}"
+    },
+    {
+      "name": "Capa provisória de projeto",
+      "kind": "card",
+      "refersTo": "project-artwork",
+      "description": "Exemplo do quinto espaço, tipográfico e explicitamente identificado como placeholder; sem imagem fictícia.",
+      "html": "<article class=\"ds-artwork\" aria-label=\"Próximo projeto: capa provisória\"><div class=\"ds-art-top\"><span>Seleção de projetos</span><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"M7 7h10v10M7 17 17 7\"/></svg></div><div class=\"ds-art-name\" aria-hidden=\"true\">Seu próximo capítulo.</div><div class=\"ds-art-bottom\"><span>Imagem do projeto<br>a ser adicionada</span><span class=\"ds-tag\">Placeholder</span></div></article>",
+      "css": ".ds-artwork{aspect-ratio:1.625;background:#201729;color:#C3A5FF;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;padding:28px;font-family:var(--font-grotesk),sans-serif;}.ds-art-top{display:flex;justify-content:space-between;align-items:center;font-size:9px;letter-spacing:.08em;text-transform:uppercase}.ds-art-name{font-family:var(--font-serif),Georgia,serif;font-size:clamp(36px,6vw,82px);font-style:italic;font-weight:500;letter-spacing:-.04em;line-height:1;align-self:center;text-align:center;max-width:80%}.ds-art-bottom{display:flex;justify-content:space-between;align-items:end;gap:20px;font-size:10px;line-height:1.6}.ds-tag{border:1px solid currentColor;padding:4px 10px;font-size:8px;letter-spacing:.08em;text-transform:uppercase}@media(max-width:767px){.ds-artwork{padding:16px}.ds-art-top{font-size:7px;letter-spacing:.04em}.ds-art-name{font-size:35px}.ds-art-bottom{font-size:8px}.ds-tag{font-size:6px;padding:3px 6px}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Design com intenção. Tecnologia com direção.",
+    "overview": "O sistema construído reúne estrutura editorial, superfícies quase pretas e acentos roxos. Space Grotesk organiza a leitura e Instrument Serif itálica destaca os momentos pessoais. Listas abertas, números discretos e linhas finas sustentam a hierarquia; a geometria do hero concentra a expressão visual.\n\nEste documento registra o código existente, sem substituir o contrato de direção em `docs/home-direction.md`. A fonte normativa dos tokens é `src/app/globals.css`; fontes locais são configuradas em `src/app/layout.tsx`. Componentes, comportamento e cores das capas vêm de `src/components` e `src/data/site.ts`.",
+    "keyCharacteristics": [
+      "Fundo escuro contínuo e superfícies tonais, sem sombras de cards.",
+      "Títulos amplos, listas editoriais e detalhes serifados em lilás.",
+      "Escultura vetorial original e portfólio com projeto central e laterais.",
+      "Ações compactas com setas, foco lilás e alternativas para movimento reduzido."
+    ],
+    "rules": [
+      {
+        "name": "The Contrast Rule",
+        "body": "A ação principal usa tinta escura sobre roxo; textos de apoio usam muted e destaques legíveis usam lilac.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Voices Rule",
+        "body": "A grotesca sustenta estrutura e informação; a serifada itálica marca a voz pessoal sem substituir os textos funcionais.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Surface Rule",
+        "body": "Preserve a leitura editorial com superfícies planas, linhas finas e profundidade concentrada na arte e no carrossel.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** manter o preto contínuo, as superfícies tonais e os acentos roxo/lilás nos papéis existentes.",
+      "**Do** preservar Space Grotesk na estrutura e Instrument Serif itálica nos destaques pessoais.",
+      "**Do** usar listas editoriais, linhas finas e números discretos para serviços e etapas.",
+      "**Do** manter foco visível, navegação por teclado e a alternativa de movimento reduzido.",
+      "**Do** identificar capas provisórias e registrar origem de novos assets em ASSETS.md."
+    ],
+    "donts": [
+      "**Don't** substituir a escultura vetorial por imagem de banco ou captura fictícia.",
+      "**Don't** transformar cada seção editorial em card com sombra.",
+      "**Don't** inventar screenshots, resultados, depoimentos ou links sociais.",
+      "**Don't** adicionar autoplay ou tornar animação uma condição para ler o conteúdo."
+    ]
+  }
+}

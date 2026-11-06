@@ -1,0 +1,14 @@
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db
+manual-scroll-cinema.pdf
+artifacts/references/*.png
+.impeccable/*
+!.impeccable/design.json

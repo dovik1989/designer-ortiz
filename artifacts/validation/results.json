@@ -1,0 +1,570 @@
+{
+  "date": "2026-11-05",
+  "origin": "http://localhost:3001",
+  "viewports": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollWidth": 1440,
+      "font": "grotesk, \"grotesk Fallback\", sans-serif",
+      "h1": {
+        "x": 80,
+        "y": 237.703125,
+        "width": 684.640625,
+        "height": 319.296875,
+        "fontSize": "74.88px",
+        "lineHeight": "78.9984px",
+        "text": "Experiênciasdigitais que fazemseu negócioavançar."
+      },
+      "sections": [
+        {
+          "id": "inicio",
+          "y": 0,
+          "width": 1440,
+          "height": 915,
+          "padding": "88px 0px 0px"
+        },
+        {
+          "id": "technology-strip",
+          "y": 915,
+          "width": 1440,
+          "height": 88,
+          "padding": "0px"
+        },
+        {
+          "id": "manifesto",
+          "y": 1003,
+          "width": 1440,
+          "height": 798,
+          "padding": "129.6px 0px 137.6px"
+        },
+        {
+          "id": "servicos",
+          "y": 1801,
+          "width": 1440,
+          "height": 1035,
+          "padding": "129.6px 0px"
+        },
+        {
+          "id": "projetos",
+          "y": 2836,
+          "width": 1440,
+          "height": 1079,
+          "padding": "129.6px 0px"
+        },
+        {
+          "id": "processo",
+          "y": 3915,
+          "width": 1440,
+          "height": 650,
+          "padding": "129.6px 0px"
+        },
+        {
+          "id": "sobre",
+          "y": 4566,
+          "width": 1440,
+          "height": 809,
+          "padding": "129.6px 0px"
+        },
+        {
+          "id": "contato",
+          "y": 5374,
+          "width": 1440,
+          "height": 839,
+          "padding": "0px"
+        }
+      ],
+      "fontsLoaded": true,
+      "images": [
+        {
+          "src": "http://localhost:3001/sculpture.svg",
+          "loaded": true
+        }
+      ],
+      "lenis": false,
+      "anchors": true,
+      "axeViolations": []
+    },
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "scrollWidth": 1920,
+      "font": "grotesk, \"grotesk Fallback\", sans-serif",
+      "h1": {
+        "x": 320,
+        "y": 276.8125,
+        "width": 684.640625,
+        "height": 341.15625,
+        "fontSize": "80px",
+        "lineHeight": "84.4px",
+        "text": "Experiênciasdigitais que fazemseu negócioavançar."
+      },
+      "sections": [
+        {
+          "id": "inicio",
+          "y": 0,
+          "width": 1920,
+          "height": 1015,
+          "padding": "88px 0px 0px"
+        },
+        {
+          "id": "technology-strip",
+          "y": 1015,
+          "width": 1920,
+          "height": 88,
+          "padding": "0px"
+        },
+        {
+          "id": "manifesto",
+          "y": 1103,
+          "width": 1920,
+          "height": 827,
+          "padding": "144px 0px 152px"
+        },
+        {
+          "id": "servicos",
+          "y": 1930,
+          "width": 1920,
+          "height": 1072,
+          "padding": "144px 0px"
+        },
+        {
+          "id": "projetos",
+          "y": 3002,
+          "width": 1920,
+          "height": 1117,
+          "padding": "144px 0px"
+        },
+        {
+          "id": "processo",
+          "y": 4119,
+          "width": 1920,
+          "height": 688,
+          "padding": "144px 0px"
+        },
+        {
+          "id": "sobre",
+          "y": 4807,
+          "width": 1920,
+          "height": 842,
+          "padding": "144px 0px"
+        },
+        {
+          "id": "contato",
+          "y": 5648,
+          "width": 1920,
+          "height": 842,
+          "padding": "0px"
+        }
+      ],
+      "fontsLoaded": true,
+      "images": [
+        {
+          "src": "http://localhost:3001/sculpture.svg",
+          "loaded": true
+        }
+      ],
+      "lenis": false,
+      "anchors": true,
+      "axeViolations": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scrollWidth": 390,
+      "font": "grotesk, \"grotesk Fallback\", sans-serif",
+      "h1": {
+        "x": 20,
+        "y": 116,
+        "width": 350,
+        "height": 180.421875,
+        "fontSize": "41.34px",
+        "lineHeight": "44.6472px",
+        "text": "Experiênciasdigitais que fazemseu negócioavançar."
+      },
+      "sections": [
+        {
+          "id": "inicio",
+          "y": 0,
+          "width": 390,
+          "height": 870,
+          "padding": "72px 0px 0px"
+        },
+        {
+          "id": "technology-strip",
+          "y": 870,
+          "width": 390,
+          "height": 126,
+          "padding": "0px"
+        },
+        {
+          "id": "manifesto",
+          "y": 996,
+          "width": 390,
+          "height": 1040,
+          "padding": "80px 0px 88px"
+        },
+        {
+          "id": "servicos",
+          "y": 2036,
+          "width": 390,
+          "height": 1017,
+          "padding": "80px 0px"
+        },
+        {
+          "id": "projetos",
+          "y": 3053,
+          "width": 390,
+          "height": 762,
+          "padding": "80px 0px"
+        },
+        {
+          "id": "processo",
+          "y": 3815,
+          "width": 390,
+          "height": 766,
+          "padding": "80px 0px"
+        },
+        {
+          "id": "sobre",
+          "y": 4581,
+          "width": 390,
+          "height": 1024,
+          "padding": "80px 0px"
+        },
+        {
+          "id": "contato",
+          "y": 5604,
+          "width": 390,
+          "height": 707,
+          "padding": "0px"
+        }
+      ],
+      "fontsLoaded": true,
+      "images": [
+        {
+          "src": "http://localhost:3001/sculpture.svg",
+          "loaded": true
+        }
+      ],
+      "lenis": false,
+      "anchors": true,
+      "axeViolations": []
+    },
+    {
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "scrollWidth": 768,
+      "font": "grotesk, \"grotesk Fallback\", sans-serif",
+      "h1": {
+        "x": 32,
+        "y": 195.9375,
+        "width": 384,
+        "height": 255.28125,
+        "fontSize": "48px",
+        "lineHeight": "50.64px",
+        "text": "Experiênciasdigitais que fazemseu negócioavançar."
+      },
+      "sections": [
+        {
+          "id": "inicio",
+          "y": 0,
+          "width": 768,
+          "height": 826,
+          "padding": "76px 0px 0px"
+        },
+        {
+          "id": "technology-strip",
+          "y": 826,
+          "width": 768,
+          "height": 80,
+          "padding": "0px"
+        },
+        {
+          "id": "manifesto",
+          "y": 906,
+          "width": 768,
+          "height": 702,
+          "padding": "100px 0px 108px"
+        },
+        {
+          "id": "servicos",
+          "y": 1608,
+          "width": 768,
+          "height": 940,
+          "padding": "100px 0px"
+        },
+        {
+          "id": "projetos",
+          "y": 2548,
+          "width": 768,
+          "height": 831,
+          "padding": "100px 0px"
+        },
+        {
+          "id": "processo",
+          "y": 3379,
+          "width": 768,
+          "height": 743,
+          "padding": "100px 0px"
+        },
+        {
+          "id": "sobre",
+          "y": 4122,
+          "width": 768,
+          "height": 672,
+          "padding": "100px 0px"
+        },
+        {
+          "id": "contato",
+          "y": 4794,
+          "width": 768,
+          "height": 749,
+          "padding": "0px"
+        }
+      ],
+      "fontsLoaded": true,
+      "images": [
+        {
+          "src": "http://localhost:3001/sculpture.svg",
+          "loaded": true
+        }
+      ],
+      "lenis": false,
+      "anchors": true,
+      "axeViolations": []
+    },
+    {
+      "viewport": {
+        "width": 320,
+        "height": 800
+      },
+      "scrollWidth": 320,
+      "font": "grotesk, \"grotesk Fallback\", sans-serif",
+      "h1": {
+        "x": 20,
+        "y": 116,
+        "width": 280,
+        "height": 195.984375,
+        "fontSize": "36px",
+        "lineHeight": "38.88px",
+        "text": "Experiênciasdigitais que fazemseu negócioavançar."
+      },
+      "sections": [
+        {
+          "id": "inicio",
+          "y": 0,
+          "width": 320,
+          "height": 870,
+          "padding": "72px 0px 0px"
+        },
+        {
+          "id": "technology-strip",
+          "y": 870,
+          "width": 320,
+          "height": 126,
+          "padding": "0px"
+        },
+        {
+          "id": "manifesto",
+          "y": 996,
+          "width": 320,
+          "height": 1154,
+          "padding": "80px 0px 88px"
+        },
+        {
+          "id": "servicos",
+          "y": 2150,
+          "width": 320,
+          "height": 1050,
+          "padding": "80px 0px"
+        },
+        {
+          "id": "projetos",
+          "y": 3200,
+          "width": 320,
+          "height": 726,
+          "padding": "80px 0px"
+        },
+        {
+          "id": "processo",
+          "y": 3926,
+          "width": 320,
+          "height": 1087,
+          "padding": "80px 0px"
+        },
+        {
+          "id": "sobre",
+          "y": 5013,
+          "width": 320,
+          "height": 1050,
+          "padding": "80px 0px"
+        },
+        {
+          "id": "contato",
+          "y": 6064,
+          "width": 320,
+          "height": 787,
+          "padding": "0px"
+        }
+      ],
+      "fontsLoaded": true,
+      "images": [
+        {
+          "src": "http://localhost:3001/sculpture.svg",
+          "loaded": true
+        }
+      ],
+      "lenis": false,
+      "anchors": true,
+      "axeViolations": []
+    }
+  ],
+  "interactions": [
+    {
+      "width": 1440,
+      "checks": [
+        "setas e ciclo circular",
+        "teclado Home/End/ArrowRight",
+        "arraste com mouse",
+        "cinco serviços expansíveis",
+        "links de WhatsApp",
+        "âncoras internas"
+      ]
+    },
+    {
+      "width": 1920,
+      "checks": [
+        "setas e ciclo circular",
+        "teclado Home/End/ArrowRight",
+        "arraste com mouse",
+        "cinco serviços expansíveis",
+        "links de WhatsApp",
+        "âncoras internas"
+      ]
+    },
+    {
+      "width": 390,
+      "checks": [
+        "setas e ciclo circular",
+        "teclado Home/End/ArrowRight",
+        "arraste com mouse",
+        "cinco serviços expansíveis",
+        "links de WhatsApp",
+        "âncoras internas",
+        "menu mobile abre e fecha",
+        "Escape retorna foco",
+        "link mobile fecha menu"
+      ]
+    },
+    {
+      "width": 768,
+      "checks": [
+        "setas e ciclo circular",
+        "teclado Home/End/ArrowRight",
+        "arraste com mouse",
+        "cinco serviços expansíveis",
+        "links de WhatsApp",
+        "âncoras internas"
+      ]
+    },
+    {
+      "width": 320,
+      "checks": [
+        "setas e ciclo circular",
+        "teclado Home/End/ArrowRight",
+        "arraste com mouse",
+        "cinco serviços expansíveis",
+        "links de WhatsApp",
+        "âncoras internas",
+        "menu mobile abre e fecha",
+        "Escape retorna foco",
+        "link mobile fecha menu"
+      ]
+    },
+    {
+      "touch": true,
+      "checks": [
+        "swipe real com eventos de toque no Chrome mobile"
+      ]
+    },
+    {
+      "width": 1440,
+      "javascript": false,
+      "checks": [
+        "conteúdo principal visível",
+        "serviços nativos operáveis",
+        "lista alternativa dos cinco projetos"
+      ]
+    },
+    {
+      "width": 390,
+      "javascript": false,
+      "checks": [
+        "conteúdo principal visível",
+        "serviços nativos operáveis",
+        "lista alternativa dos cinco projetos"
+      ]
+    },
+    {
+      "motion": true,
+      "lenisInitially": true,
+      "checks": [
+        "animações preservam conteúdo",
+        "revelação durante scroll",
+        "alterar movimento reduzido remove Lenis"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "path": "/projetos/mimos-e-caprichos",
+      "status": 200
+    },
+    {
+      "path": "/projetos/fortis",
+      "status": 200
+    },
+    {
+      "path": "/projetos/w11-brindes",
+      "status": 200
+    },
+    {
+      "path": "/projetos/sensedia",
+      "status": 200
+    },
+    {
+      "path": "/projetos/proximo-projeto",
+      "status": 200
+    },
+    {
+      "path": "/privacidade",
+      "status": 200
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200
+    },
+    {
+      "path": "/pagina-inexistente",
+      "status": 404
+    }
+  ],
+  "errors": [],
+  "performance": {
+    "htmlBytes": 73439,
+    "inlinePolygons": 0
+  }
+}

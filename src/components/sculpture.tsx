@@ -1,0 +1,1 @@
+export function Sculpture(){return <div className="sculpture-float"><img className="sculpture" src="/sculpture.svg" width={640} height={640} alt="" aria-hidden="true" fetchPriority="high" decoding="async" /></div>;}

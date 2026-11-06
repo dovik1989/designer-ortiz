@@ -1,0 +1,16 @@
+﻿import type { Metadata } from 'next';
+import Link from 'next/link';
+import { notFound } from 'next/navigation';
+import { ArrowLeft, ArrowUpRight } from 'lucide-react';
+import { projects } from '@/data/site';
+import { Header } from '@/components/header';
+import { ProjectArtwork } from '@/components/project-artwork';
+import { ContactLink } from '@/components/ui';
+
+export function generateStaticParams(){return projects.map(project=>({slug:project.slug}));}
+export async function generateMetadata({params}:{params:Promise<{slug:string}>}):Promise<Metadata>{const {slug}=await params;const p=projects.find(p=>p.slug===slug);return {title:p?.name||'Projeto',description:p?.description,robots:{index:false,follow:true}};}
+export default async function ProjectPage({params}:{params:Promise<{slug:string}>}){
+ const {slug}=await params;const project=projects.find(p=>p.slug===slug);if(!project)notFound();
+ const next=projects[(projects.indexOf(project)+1)%projects.length];
+ return <><Header/><main id="conteudo" className="project-page container"><Link href="/#projetos" className="text-link"><ArrowLeft size={18} aria-hidden="true"/>Todos os projetos</Link><h1>{project.name}<span className="accent">.</span></h1><p className="project-page-category">{project.category}</p><div className="project-page-art"><ProjectArtwork project={project} priority/></div><div className="project-page-description"><div><h2>Um espaço para<br/>contar esta história.</h2><p>{project.description}</p>{!project.image&&<p className="material-status">Apresentação em preparação. Esta capa é um placeholder, não uma captura do projeto.</p>}</div><ContactLink subject={`Olá, Ludovik! Quero conversar sobre um projeto inspirado em ${project.name}.`}>Conversar sobre uma ideia</ContactLink></div><Link className="project-next text-link" href={`/projetos/${next.slug}`}>Próximo: {next.name}<ArrowUpRight size={20} aria-hidden="true"/></Link></main></>;
+}
