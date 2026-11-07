@@ -1,11 +1,11 @@
-import { ArrowDown, ArrowDownRight, ArrowUpRight, Code2, Figma, Hexagon, Sparkles, Triangle, Braces } from 'lucide-react';
+import { ArrowDown, ArrowUpRight, Code2, Figma, Hexagon, Sparkles, Triangle, Braces } from 'lucide-react';
 import { ContactLink } from './ui';
 import { Sculpture } from './sculpture';
 
 export function Hero(){return <section id="inicio" className="hero" aria-labelledby="hero-title"><div className="container hero-grid">
- <div className="hero-copy"><h1 id="hero-title"><span className="hero-line"><span>Experiências</span></span><span className="hero-line"><span>digitais que fazem</span></span><span className="hero-line"><span>seu negócio</span></span><span className="hero-line hero-accent"><span>avançar.<ArrowUpRight aria-hidden="true" /></span></span></h1>
- <p className="hero-description">Sites, landing pages, identidade visual e automações que conectam marcas a novas oportunidades.</p>
- <div className="hero-actions"><ContactLink /><a className="text-link" href="#projetos">Explorar projetos <ArrowDownRight size={19} aria-hidden="true" /></a></div>
+ <div className="hero-copy"><p className="hero-label" data-reveal>CRIAÇÃO DE SITES • LANDING PAGES • DESIGN</p><h1 id="hero-title"><span className="hero-line"><span>Experiências digitais</span></span><span className="hero-line"><span>que fazem seu negócio</span></span><span className="hero-line hero-accent"><span>avançar.<ArrowUpRight aria-hidden="true" /></span></span></h1>
+ <p className="hero-description">Crio sites profissionais, rápidos e personalizados para valorizar sua marca, transmitir confiança e transformar visitantes em oportunidades de negócio.</p>
+ <div className="hero-actions"><ContactLink>Solicitar orçamento</ContactLink><a className="text-link" href="#projetos">Conhecer projetos <ArrowUpRight size={19} aria-hidden="true" /></a></div>
  </div>
  <div className="hero-art"><div className="hero-art-inner"><Sculpture /></div><span className="art-caption">Design com intenção.<br/>Tecnologia com direção.</span></div>
  <div className="hero-bottom"><p>Estratégia <span/> Design <span/> Desenvolvimento</p><a href="#manifesto" aria-label="Continue explorando: ir para o manifesto"><span>Continue explorando</span><ArrowDown size={17} aria-hidden="true" /></a></div>

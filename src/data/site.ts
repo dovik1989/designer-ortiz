@@ -1,9 +1,9 @@
-﻿export const studio = {
+export const studio = {
   name: 'LUDOVIK',
   phone: '5519994623541',
   phoneDisplay: '(19) 99462-3541',
   instagram: '',
-  linkedin: '',
+  linkedin: 'https://www.linkedin.com/in/ludovik-ortiz-das-neves-920141119/',
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || '',
 };
 
@@ -19,11 +19,54 @@ export const navigation = [
 ];
 
 export const services = [
-  { name: 'Landing pages', description: 'Uma página. Uma mensagem clara. Um próximo passo.', detail: 'Páginas que organizam sua oferta e conduzem o visitante até a ação que importa para o seu negócio.', deliverables: ['Estrutura e direção visual', 'Design responsivo', 'WhatsApp e formulários'], subject: 'Quero conversar sobre uma landing page.' },
-  { name: 'Sites institucionais', description: 'O seu negócio, apresentado à altura do que entrega.', detail: 'Uma presença própria para apresentar sua empresa, comunicar seus diferenciais e facilitar novas conversas.', deliverables: ['Arquitetura de conteúdo', 'Interface sob medida', 'Base para SEO'], subject: 'Quero conversar sobre um site institucional.' },
-  { name: 'Identidade visual', description: 'Personalidade que se reconhece em cada ponto de contato.', detail: 'Um sistema visual coerente para a sua marca se expressar com clareza, do primeiro contato aos pequenos detalhes.', deliverables: ['Direção criativa', 'Marca e universo visual', 'Aplicações e guia de uso'], subject: 'Quero conversar sobre identidade visual.' },
-  { name: 'E-commerce', description: 'Uma experiência de compra pensada do início ao fim.', detail: 'Lojas digitais que aproximam seus produtos de quem procura por eles, com navegação simples e uma jornada de compra clara.', deliverables: ['Organização do catálogo', 'Design da experiência', 'Integrações por escopo'], subject: 'Quero conversar sobre um e-commerce.' },
-  { name: 'Automações e IA', description: 'Menos tarefas repetidas. Mais espaço para o que importa.', detail: 'Conexões entre ferramentas e fluxos que simplificam a rotina da sua empresa. A tecnologia se adapta ao processo.', deliverables: ['Mapeamento de processos', 'Integrações entre ferramentas', 'Fluxos de atendimento'], subject: 'Quero conversar sobre automações e IA.' },
+  {
+    "name": "Landing pages",
+    "description": "Páginas estratégicas para campanhas, lançamentos e captação de contatos, com foco em conversão.",
+    "detail": "Páginas que organizam sua oferta e conduzem o visitante até a ação que importa para o seu negócio.",
+    "deliverables": [
+      "Estrutura orientada ao objetivo da campanha.",
+      "Layout responsivo.",
+      "Botões e formulários de conversão.",
+      "Integração com canais de contato, conforme o escopo contratado."
+    ],
+    "subject": "Quero conversar sobre uma landing page."
+  },
+  {
+    "name": "Sites institucionais",
+    "description": "Sites modernos e responsivos para apresentar sua empresa, fortalecer sua credibilidade e facilitar o contato com novos clientes.",
+    "detail": "Uma presença própria para apresentar sua empresa, comunicar seus diferenciais e facilitar novas conversas.",
+    "deliverables": [
+      "Apresentação profissional da empresa.",
+      "Estrutura de páginas personalizada.",
+      "Experiência adaptada ao celular.",
+      "Organização de serviços, informações e contatos."
+    ],
+    "subject": "Quero conversar sobre um site institucional."
+  },
+  {
+    "name": "Identidade visual",
+    "description": "Criação de marcas consistentes, com logotipo e elementos visuais que ajudam sua empresa a ser reconhecida.",
+    "detail": "Um sistema visual coerente para a sua marca se expressar com clareza, do primeiro contato aos pequenos detalhes.",
+    "deliverables": [
+      "Desenvolvimento de conceito visual.",
+      "Logotipo e variações previstas no projeto.",
+      "Paleta de cores e tipografia.",
+      "Diretrizes de aplicação conforme a proposta."
+    ],
+    "subject": "Quero conversar sobre identidade visual."
+  },
+  {
+    "name": "E-commerce",
+    "description": "Lojas virtuais organizadas para apresentar produtos, facilitar compras e oferecer uma boa experiência ao consumidor.",
+    "detail": "Lojas digitais que aproximam seus produtos de quem procura por eles, com navegação simples e uma jornada de compra clara.",
+    "deliverables": [
+      "Organização de produtos e categorias.",
+      "Layout responsivo.",
+      "Jornada de compra intuitiva.",
+      "Integrações e funcionalidades conforme a plataforma e o escopo contratado."
+    ],
+    "subject": "Quero conversar sobre um e-commerce."
+  }
 ];
 
 export type Project = {

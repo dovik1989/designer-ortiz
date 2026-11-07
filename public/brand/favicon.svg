@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="LUDOVIK Estúdio Digital">
+<defs><linearGradient id="violetTile" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#B42BFF"/><stop offset="0.54" stop-color="#7810B3"/><stop offset="1" stop-color="#29063B"/></linearGradient></defs>
+<rect x="0" y="0" width="256" height="256" rx="57.60" fill="url(#violetTile)"/><path d="M 20.5 199.7 C 56.3 238.1 194.6 253.4 243.2 171.5" fill="none" stroke="#D29AFB" stroke-width="5.12" opacity=".14"/><path d="M66.560,58.880 H101.120 V162.560 H159.744 V195.840 H66.560 Z" fill="#FFFFFF"/><circle cx="188.672" cy="179.200" r="16.896" fill="#D04BFF"/>
+</svg>

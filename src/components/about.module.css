@@ -1,0 +1,125 @@
+.signoff::before {
+  content: '';
+  display: block;
+  width: 18px;
+  height: 1px;
+  margin-bottom: 14px;
+  background: var(--lilac);
+}
+
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  padding: 0;
+  margin: 40px 0 0;
+  list-style: none;
+}
+
+.highlight {
+  min-width: 0;
+}
+
+.featureMeta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--lilac);
+  font-size: 11px;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.highlight h3 {
+  margin-top: 14px;
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.45;
+  letter-spacing: -.02em;
+}
+
+.highlight p {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px 20px;
+  margin-top: 32px;
+}
+
+.linkedin {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 100%;
+  min-height: 44px;
+  color: var(--text);
+  font-size: 13px;
+  line-height: 1.6;
+  transition: color .22s var(--ease);
+}
+
+.linkedin:hover,
+.linkedin:focus-visible {
+  color: var(--lilac);
+}
+
+.orbit {
+  animation: about-orbit 48s linear infinite;
+  animation-play-state: paused;
+}
+
+.orbit[data-active='true'] {
+  animation-play-state: running;
+}
+
+@keyframes about-orbit {
+  from { transform: rotate(-28deg) scaleY(.75); }
+  to { transform: rotate(332deg) scaleY(.75); }
+}
+
+@media (max-width: 1100px) {
+  .highlights {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .highlight {
+    display: grid;
+    grid-template-columns: 50px minmax(0, 1fr);
+    column-gap: 14px;
+  }
+
+  .featureMeta {
+    grid-row: 1 / span 2;
+    align-self: start;
+    margin-top: 2px;
+  }
+
+  .highlight h3 {
+    margin-top: 0;
+    font-size: 16px;
+  }
+
+  .highlight p {
+    grid-column: 2;
+    margin-top: 6px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .orbit {
+    animation: none;
+  }
+
+  .linkedin {
+    transition: none;
+  }
+}

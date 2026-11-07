@@ -1,0 +1,13 @@
+/* LUDOVIK — Identidade A | tokens de referência */
+:root {
+  --brand-purple: #A63DFF;
+  --brand-lilac: #C3A5FF;
+  --brand-white: #F5F4F8;
+  --brand-black: #08080C;
+  --brand-gray: #A4A2AF;
+  --brand-purple-deep: #3E075D;
+  --brand-radius: 12px;
+  --brand-max-width: 1280px;
+  --brand-font-display: "Space Grotesk", "Inter", sans-serif;
+  --brand-font-body: "Inter", sans-serif;
+}
