@@ -3,7 +3,7 @@
 import { useEffect, useRef, type MouseEvent } from 'react';
 import Image from 'next/image';
 import { ArrowDownRight, ArrowUpRight, Plus, Minus } from 'lucide-react';
-import { services, projects } from '@/data/site';
+import { services, servicePreviews } from '@/data/site';
 import { ContactLink } from './ui';
 
 type ServiceAnimation = {
@@ -92,7 +92,7 @@ export function Services() {
         </div>
         <div className="service-list">
           {services.map((service, index) => {
-            const preview = projects[index].image;
+            const preview = servicePreviews[service.name] || null;
             return (
               <details
                 className="service"

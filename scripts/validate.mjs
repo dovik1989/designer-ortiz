@@ -30,13 +30,13 @@ try {
   assert.match(await page.locator('.project-selection h3').textContent(),/Fortis/);
   await page.getByRole('button',{name:'Projeto anterior',exact:true}).click();
   await page.getByRole('button',{name:'Projeto anterior',exact:true}).click();
-  assert.match(await page.locator('.project-selection h3').textContent(),/Próximo projeto/);
+  assert.match(await page.locator('.project-selection h3').textContent(),/Sucatas Valinhos/);
   await page.locator('.carousel-viewport').focus();await page.keyboard.press('Home');
   await page.keyboard.press('ArrowRight');assert.match(await page.locator('.project-selection h3').textContent(),/Fortis/);
-  await page.keyboard.press('End');assert.match(await page.locator('.project-selection h3').textContent(),/Próximo projeto/);
+  await page.keyboard.press('End');assert.match(await page.locator('.project-selection h3').textContent(),/Sucatas Valinhos/);
   await page.keyboard.press('Home');
   const services=page.locator('.service');
-  for(let i=0;i<5;i++){await services.nth(i).locator('summary').click();assert.equal(await services.nth(i).getAttribute('open'),'');await services.nth(i).locator('.service-body .button').waitFor({state:'visible'});await services.nth(i).locator('summary').click();}
+  for(let i=0;i<await services.count();i++){await services.nth(i).locator('summary').click();assert.equal(await services.nth(i).getAttribute('open'),'');await services.nth(i).locator('.service-body .button').waitFor({state:'visible'});await services.nth(i).locator('summary').click();}
   if(viewport.width<768){await page.locator('.mobile-menu summary').click();assert.equal(await page.locator('.mobile-menu').getAttribute('open'),'');await page.keyboard.press('Escape');assert.equal(await page.locator('.mobile-menu').getAttribute('open'),null);await page.locator('.mobile-menu summary').click();await page.getByRole('navigation',{name:'Navegação mobile',exact:true}).getByRole('link',{name:'Projetos',exact:true}).click();assert.equal(await page.locator('.mobile-menu').getAttribute('open'),null);}
   await page.locator('.carousel-viewport').scrollIntoViewIfNeeded();
   const box=await page.locator('.carousel-viewport').boundingBox();
@@ -53,7 +53,7 @@ try {
    await page.screenshot({path:`artifacts/validation/${viewport.width}-full.png`,fullPage:true});
    for(const id of ['manifesto','servicos','projetos','contato']){await page.evaluate(id=>{const section=document.getElementById(id),header=document.querySelector('.site-header');scrollTo(0,section.getBoundingClientRect().top+scrollY-header.offsetHeight-16);},id);await page.waitForTimeout(100);await page.screenshot({path:`artifacts/validation/${viewport.width}-${id}.png`});}
   }
-  report.interactions.push({width:viewport.width,checks:['setas e ciclo circular','teclado Home/End/ArrowRight','arraste com mouse','cinco serviços expansíveis','links de WhatsApp','âncoras internas',...(viewport.width<768?['menu mobile abre e fecha','Escape retorna foco','link mobile fecha menu']:[])]});
+  report.interactions.push({width:viewport.width,checks:['setas e ciclo circular','teclado Home/End/ArrowRight','arraste com mouse','serviços expansíveis','links de WhatsApp','âncoras internas',...(viewport.width<768?['menu mobile abre e fecha','Escape retorna foco','link mobile fecha menu']:[])]});
   console.log('Viewport',viewport.width,'OK; axe:',axe.violations.length);
   await page.close();
  }
@@ -66,7 +66,7 @@ try {
  await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});assert.match(await touchPage.locator('.project-selection h3').textContent(),/Fortis/);
  report.interactions.push({touch:true,checks:['swipe real com eventos de toque no Chrome mobile']});await touchContext.close();
 
- for(const path of ['/projetos/mimos-e-caprichos','/projetos/fortis','/projetos/w11-brindes','/projetos/sensedia','/projetos/proximo-projeto','/privacidade','/robots.txt','/sitemap.xml','/pagina-inexistente']){
+ for(const path of ['/projetos/mimos-e-caprichos','/projetos/fortis','/projetos/w11-brindes','/projetos/sucatas-valinhos-ambiental','/privacidade','/robots.txt','/sitemap.xml','/pagina-inexistente']){
   const page=await browser.newPage();const response=await page.goto(origin+path,{waitUntil:'domcontentloaded'});const status=response.status();assert.equal(status,path==='/pagina-inexistente'?404:200);report.routes.push({path,status});await page.close();
  }
  for(const viewport of [{width:1440,height:900},{width:390,height:844}]){

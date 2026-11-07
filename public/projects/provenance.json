@@ -1,0 +1,46 @@
+[
+  {
+    "slug": "mimos-e-caprichos",
+    "url": "https://mimosecaprichos4.vercel.app/",
+    "status": 200,
+    "title": "Mimos e Caprichos — Presentes Personalizados em Valinhos-SP",
+    "file": "/projects/mimos-e-caprichos.webp",
+    "width": 1440,
+    "height": 900,
+    "origin": "Real browser screenshot of the published website",
+    "date": "2026-11-07"
+  },
+  {
+    "slug": "fortis",
+    "url": "https://fortis-roan.vercel.app/",
+    "status": 200,
+    "title": "Fortis Motores Elétricos | Rebobinamentos e Reparos em Campinas",
+    "file": "/projects/fortis.webp",
+    "width": 1440,
+    "height": 900,
+    "origin": "Real browser screenshot of the published website",
+    "date": "2026-11-07"
+  },
+  {
+    "slug": "w11-brindes",
+    "url": "https://w11brindes-iplu.vercel.app/",
+    "status": 200,
+    "title": "W11 Brindes | Sua marca, presente em todos os momentos",
+    "file": "/projects/w11-brindes.webp",
+    "width": 1440,
+    "height": 900,
+    "origin": "Real browser screenshot of the published website",
+    "date": "2026-11-07"
+  },
+  {
+    "slug": "sucatas-valinhos-ambiental",
+    "url": "https://sucatas-valinhos-ambiental.vercel.app/",
+    "status": 200,
+    "title": "Sucatas Valinhos Ambiental | Coleta e Reciclagem em Valinhos",
+    "file": "/projects/sucatas-valinhos-ambiental.webp",
+    "width": 1440,
+    "height": 900,
+    "origin": "Real browser screenshot of the published website",
+    "date": "2026-11-07"
+  }
+]

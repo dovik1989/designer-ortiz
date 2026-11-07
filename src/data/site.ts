@@ -79,17 +79,63 @@ export type Project = {
   image: string | null;
   imageAlt: string;
   description: string;
+  url: string;
 };
 
-// Adicione arquivos em public/projects e use /projects/arquivo.webp em image.
-// Os nomes e categorias abaixo organizam a V1; não são estudos de caso ou resultados.
+// Capturas reais dos sites publicados. Origem em public/projects/provenance.json.
 export const projects: Project[] = [
-  { slug: 'mimos-e-caprichos', name: 'Mimos & Caprichos', category: 'Presença digital', initials: 'm&c.', color: '#E5BCCF', surface: '#33232E', image: null, imageAlt: '', description: 'Espaço reservado para apresentar o projeto Mimos & Caprichos. As imagens, o escopo e os detalhes serão adicionados após a seleção dos materiais.' },
-  { slug: 'fortis', name: 'Fortis', category: 'Projeto selecionado', initials: 'FORTIS', color: '#D8E6BC', surface: '#242D22', image: null, imageAlt: '', description: 'Espaço reservado para apresentar o projeto Fortis. O material e a descrição do trabalho serão adicionados nesta página.' },
-  { slug: 'w11-brindes', name: 'W11 Brindes', category: 'Projeto selecionado', initials: 'W11', color: '#B6CBF5', surface: '#20283B', image: null, imageAlt: '', description: 'Espaço reservado para apresentar o projeto W11 Brindes. As imagens e as informações do projeto ainda precisam ser selecionadas.' },
-  { slug: 'sensedia', name: 'Sensedia', category: 'Projeto selecionado', initials: 'sensedia', color: '#D2B7FA', surface: '#2A203B', image: null, imageAlt: '', description: 'Espaço reservado para apresentar o projeto Sensedia. Os detalhes do escopo e os materiais visuais serão incluídos posteriormente.' },
-  { slug: 'proximo-projeto', name: 'Próximo projeto', category: 'Seleção em aberto', initials: 'Seu próximo capítulo.', color: '#C3A5FF', surface: '#201729', image: null, imageAlt: '', description: 'O quinto espaço do portfólio é configurável. Nome, categoria, imagem e descrição ficam centralizados em src/data/site.ts.' },
+  {
+    "slug": "mimos-e-caprichos",
+    "name": "Mimos & Caprichos",
+    "category": "Site institucional e catálogo",
+    "initials": "m&c.",
+    "color": "#E5BCCF",
+    "surface": "#33232E",
+    "image": "/projects/mimos-e-caprichos.webp",
+    "imageAlt": "Captura real do site Mimos & Caprichos",
+    "description": "Site de presentes e personalizados, com catálogo de produtos e contato pelo WhatsApp.",
+    "url": "https://mimosecaprichos4.vercel.app/"
+  },
+  {
+    "slug": "fortis",
+    "name": "Fortis Motores Elétricos",
+    "category": "Site institucional",
+    "initials": "FORTIS",
+    "color": "#D8E6BC",
+    "surface": "#242D22",
+    "image": "/projects/fortis.webp",
+    "imageAlt": "Captura real do site Fortis Motores Elétricos",
+    "description": "Apresentação de serviços de manutenção de motores e bombas, com solicitação de orçamento pelo WhatsApp.",
+    "url": "https://fortis-roan.vercel.app/"
+  },
+  {
+    "slug": "w11-brindes",
+    "name": "W11 Brindes",
+    "category": "Site institucional e portfólio",
+    "initials": "W11",
+    "color": "#B6CBF5",
+    "surface": "#20283B",
+    "image": "/projects/w11-brindes.webp",
+    "imageAlt": "Captura real do site W11 Brindes",
+    "description": "Apresentação de brindes personalizados, categorias de produtos e formulário de solicitação de orçamento.",
+    "url": "https://w11brindes-iplu.vercel.app/"
+  },
+  {
+    "slug": "sucatas-valinhos-ambiental",
+    "name": "Sucatas Valinhos Ambiental",
+    "category": "Site institucional",
+    "initials": "SVA",
+    "color": "#C8EAAF",
+    "surface": "#16392B",
+    "image": "/projects/sucatas-valinhos-ambiental.webp",
+    "imageAlt": "Captura real do site Sucatas Valinhos Ambiental",
+    "description": "Serviços de reciclagem, materiais atendidos e canais de contato para empresas de Valinhos e região.",
+    "url": "https://sucatas-valinhos-ambiental.vercel.app/"
+  }
 ];
+
+// Prévias dos serviços são independentes do portfólio.
+export const servicePreviews: Record<string, string> = {};
 
 export const processSteps = [
   { title: 'Descoberta', text: 'Uma boa conversa para entender seu negócio, seu público e o que precisa acontecer.' },
