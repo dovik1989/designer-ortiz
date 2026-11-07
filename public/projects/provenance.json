@@ -37,10 +37,12 @@
     "url": "https://sucatas-valinhos-ambiental.vercel.app/",
     "status": 200,
     "title": "Sucatas Valinhos Ambiental | Coleta e Reciclagem em Valinhos",
-    "file": "/projects/sucatas-valinhos-ambiental.webp",
+    "file": "/projects/sucatas-valinhos-ambiental-70d9035.webp",
     "width": 1440,
     "height": 900,
     "origin": "Real browser screenshot of the published website",
-    "date": "2026-11-07"
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T22:19:09.236Z",
+    "sourceCommit": "70d903545337c0e7f4dc268b9693b884be8bf6ea"
   }
 ]

@@ -127,7 +127,7 @@ export const projects: Project[] = [
     "initials": "SVA",
     "color": "#C8EAAF",
     "surface": "#16392B",
-    "image": "/projects/sucatas-valinhos-ambiental.webp",
+    "image": "/projects/sucatas-valinhos-ambiental-70d9035.webp",
     "imageAlt": "Captura real do site Sucatas Valinhos Ambiental",
     "description": "Serviços de reciclagem, materiais atendidos e canais de contato para empresas de Valinhos e região.",
     "url": "https://sucatas-valinhos-ambiental.vercel.app/"
