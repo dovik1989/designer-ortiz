@@ -228,3 +228,9 @@ Não existem campos de formulário, diálogos, notificações ou backend de lead
 - **Don't** transformar cada seção editorial em card com sombra.
 - **Don't** inventar screenshots, resultados, depoimentos ou links sociais.
 - **Don't** adicionar autoplay ou tornar animação uma condição para ler o conteúdo.
+
+## Ajustes de mobile e contato — 08/11/2026
+
+No celular e em tablets de até 900px, a seção Sobre apresenta primeiro o retrato, em recorte horizontal com transição suave para o fundo, seguido pelo nome e pela biografia completa. Os três destaques ocupam colunas compactas; a chamada de WhatsApp e o LinkedIn ficam na mesma linha. Parágrafos da apresentação usam 16px / 1.75. Os demais textos de apoio ganham legibilidade, e a linha de processo tem intervalos menores.
+
+O contato flutuante fica no canto inferior direito em todas as rotas, fora dos contêineres animados: círculo violeta #8050e6, ícone branco e halo suave, conforme a referência fornecida. Mede 56px no desktop e 52px no mobile, respeita safe areas e o foco por teclado, e é ocultado durante a abertura do menu mobile. O rodapé reserva espaço inferior para o botão.

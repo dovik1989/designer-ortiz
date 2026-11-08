@@ -1,0 +1,71 @@
+.button {
+  position: fixed;
+  right: max(28px, env(safe-area-inset-right));
+  bottom: max(28px, env(safe-area-inset-bottom));
+  z-index: 45;
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #8050e6;
+  color: #fff;
+  box-shadow: 0 8px 30px rgb(128 80 230 / .4), inset 0 1px 0 rgb(255 255 255 / .18);
+  transition: transform .3s var(--ease), box-shadow .3s var(--ease);
+  isolation: isolate;
+}
+
+.button svg {
+  position: relative;
+  width: 28px;
+  height: 28px;
+}
+
+.ring {
+  position: absolute;
+  inset: -12px;
+  border: 1px solid rgb(128 80 230 / .2);
+  border-radius: inherit;
+  background: radial-gradient(circle, rgb(128 80 230 / .12), transparent 72%);
+  pointer-events: none;
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--lilac);
+  outline-offset: 6px;
+}
+
+.button:active {
+  transform: scale(.96);
+}
+
+@media (hover: hover) {
+  .button:hover {
+    transform: translateY(-3px) scale(1.04);
+    box-shadow: 0 12px 38px rgb(128 80 230 / .56), inset 0 1px 0 rgb(255 255 255 / .18);
+  }
+}
+
+@media (max-width: 767px) {
+  .button {
+    right: max(18px, env(safe-area-inset-right));
+    bottom: max(18px, env(safe-area-inset-bottom));
+    width: 52px;
+    height: 52px;
+  }
+
+  .button svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  :global(body:has(.mobile-menu[open])) .button {
+    visibility: hidden;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button {
+    transition: none;
+  }
+}

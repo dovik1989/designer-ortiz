@@ -1,3 +1,23 @@
+.portrait {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.portraitImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: var(--surface);
+}
+
+.portraitCaption {
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.65;
+}
+
 .signoff::before {
   content: '';
   display: block;
@@ -71,20 +91,6 @@
   color: var(--lilac);
 }
 
-.orbit {
-  animation: about-orbit 48s linear infinite;
-  animation-play-state: paused;
-}
-
-.orbit[data-active='true'] {
-  animation-play-state: running;
-}
-
-@keyframes about-orbit {
-  from { transform: rotate(-28deg) scaleY(.75); }
-  to { transform: rotate(332deg) scaleY(.75); }
-}
-
 @media (max-width: 1100px) {
   .highlights {
     grid-template-columns: minmax(0, 1fr);
@@ -114,11 +120,87 @@
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .orbit {
-    animation: none;
+@media (max-width: 900px) {
+  .portrait {
+    width: calc(100% + var(--gutter) * 2);
+    max-width: none;
+    margin-inline: calc(var(--gutter) * -1);
+    order: 0;
   }
 
+  .portraitMedia {
+    height: clamp(280px, 92vw, 440px);
+    overflow: hidden;
+    mask-image: linear-gradient(to bottom, transparent, #000 5%, #000 78%, transparent);
+  }
+
+  .portraitImage {
+    height: 100%;
+    object-fit: cover;
+    object-position: center 24%;
+  }
+
+  .portraitCaption,
+  .signoff {
+    display: none;
+  }
+
+  .highlights {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    margin-top: 28px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+  }
+
+  .highlight {
+    display: block;
+  }
+
+  .featureMeta {
+    margin: 0 0 12px;
+  }
+
+  .highlight h3 {
+    font-size: clamp(12px, 3.5vw, 14px);
+    line-height: 1.5;
+  }
+
+  .highlight p {
+    margin-top: 6px;
+    font-size: 12px;
+    line-height: 1.65;
+  }
+
+  .actions {
+    flex-wrap: nowrap;
+    gap: 12px;
+    margin-top: 28px;
+  }
+
+  .actions > :first-child {
+    flex: 1;
+    min-height: 52px;
+    padding-inline: 16px;
+    font-size: 14px;
+  }
+
+  .linkedin {
+    flex: 0 0 52px;
+    justify-content: center;
+    min-height: 52px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    color: var(--lilac);
+  }
+
+  .linkedinLabel,
+  .linkedin > svg:last-child {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
   .linkedin {
     transition: none;
   }

@@ -22,12 +22,16 @@
 }
 
 @media (max-width: 767px) {
+  .section {
+    padding-block: 24px 64px;
+  }
+
   .heading {
     font-size: clamp(32px, 8.5vw, 44px);
   }
 
   .description {
     max-width: 390px;
-    font-size: 14px;
+    font-size: 15px;
   }
 }

@@ -3,6 +3,7 @@ import localFont from 'next/font/local';
 import '../../public/brand/ludovik-tokens.css';
 import './globals.css';
 import { studio } from '@/data/site';
+import { FloatingWhatsApp } from '@/components/floating-whatsapp';
 
 const grotesk = localFont({ src: [
   { path: '../../public/fonts/space-grotesk-regular.ttf', weight: '400', style: 'normal' },
@@ -58,5 +59,5 @@ export const viewport: Viewport = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="pt-BR" className={`${grotesk.variable} ${serif.variable}`}><body><a className="skip-link" href="#conteudo">Pular para o conteúdo</a>{children}</body></html>;
+  return <html lang="pt-BR" className={`${grotesk.variable} ${serif.variable}`}><body><a className="skip-link" href="#conteudo">Pular para o conteúdo</a>{children}<FloatingWhatsApp /></body></html>;
 }

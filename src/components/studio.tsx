@@ -2,7 +2,7 @@ export { Process } from './process';
 import { ArrowUpRight, Compass, Linkedin, Monitor, Palette } from 'lucide-react';
 import { ContactLink } from './ui';
 import { studio } from '@/data/site';
-import { AboutOrbit } from './about-orbit';
+import Image from 'next/image';
 import styles from './about.module.css';
 
 const paragraphs = [
@@ -22,24 +22,31 @@ export function About() {
   return (
     <section id="sobre" className="about section" aria-labelledby="about-title">
       <div className="container about-grid">
-        <div className="about-monogram" aria-hidden="true" data-reveal>
-          <span>L<span className="accent">.</span></span>
-          <AboutOrbit />
-          <div className="monogram-caption">
-            O olhar de um designer.<br />A visão de um parceiro.
+        <figure className={styles.portrait} data-reveal>
+          <div className={styles.portraitMedia}>
+            <Image
+              src="/images/ludovik-portrait.png"
+              alt="Retrato de Ludovik, designer gráfico, com blazer escuro e iluminação azul e magenta."
+              width={1122}
+              height={1402}
+              sizes="(max-width: 600px) 100vw, (max-width: 900px) 624px, (max-width: 1150px) 45vw, 520px"
+              className={styles.portraitImage}
+            />
           </div>
-        </div>
+          <figcaption className={styles.portraitCaption}>
+            O olhar de um designer.<br />A visão de um parceiro.
+          </figcaption>
+        </figure>
         <div className="about-copy">
-          <h2 id="about-title" data-reveal>Prazer,<br />sou <em>Ludovik.</em></h2>
+          <h2 id="about-title" data-reveal>Prazer,<br /> sou <em>Ludovik.</em></h2>
           {paragraphs.map(paragraph => <p key={paragraph} data-reveal>{paragraph}</p>)}
           <p className={`about-signoff ${styles.signoff}`} data-reveal>
             O olhar de um designer. A visão de quem entende negócios.
           </p>
           <ul className={styles.highlights} role="list">
-            {highlights.map(({ title, description, Icon }, index) => (
+            {highlights.map(({ title, description, Icon }) => (
               <li key={title} className={styles.highlight} data-reveal>
                 <div className={styles.featureMeta} aria-hidden="true">
-                  <span>0{index + 1}</span>
                   <Icon size={20} strokeWidth={1.5} />
                 </div>
                 <h3>{title}</h3>
@@ -51,12 +58,13 @@ export function About() {
             <ContactLink>Vamos conversar</ContactLink>
             <a
               className={styles.linkedin}
+              aria-label="Conheça minha trajetória no LinkedIn"
               href={studio.linkedin}
               target="_blank"
               rel="noopener noreferrer"
             >
               <Linkedin size={16} aria-hidden="true" />
-              <span>Conheça minha trajetória no LinkedIn</span>
+              <span className={styles.linkedinLabel}>Conheça minha trajetória no LinkedIn</span>
               <ArrowUpRight size={16} aria-hidden="true" />
             </a>
           </div>
