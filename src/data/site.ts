@@ -94,7 +94,7 @@ export const projects: Project[] = [
     "image": "/projects/mimos-e-caprichos.webp",
     "imageAlt": "Captura real do site Mimos & Caprichos",
     "description": "Site de presentes e personalizados, com catálogo de produtos e contato pelo WhatsApp.",
-    "url": "https://mimosecaprichos4.vercel.app/"
+    "url": "https://www.mimosecaprichos.com.br/"
   },
   {
     "slug": "fortis",
