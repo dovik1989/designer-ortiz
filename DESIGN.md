@@ -8,6 +8,7 @@ colors:
   purple: "#a63dff"
   purple-hover: "#b65fff"
   lilac: "#c3a5ff"
+  amoeba-lilac: "#cfa7ff"
   text: "#f5f4f8"
   muted: "#a4a2af"
   line: "#27252f"
@@ -174,7 +175,7 @@ Os brilhos laterais do rodapé são gradientes radiais `rgb(166 61 255 / .075)`,
 
 ## Shapes
 
-Botões e contato do cabeçalho têm cantos discretos pelo token control. Controles de ícone, órbita do monograma e pequenos pontos usam circle. Capas e linhas editoriais não recebem arredondamento de card. A arte do hero é um nó toroidal original em SVG (640 × 640), servido em `public/sculpture.svg`, gerado por `scripts/generate-sculpture.mjs`; `src/components/sculpture.tsx` apenas carrega a imagem decorativa, sem canvas ou raster.
+Botões e contato do cabeçalho têm cantos discretos pelo token control. Controles de ícone, órbita do monograma e pequenos pontos usam circle. Capas e linhas editoriais não recebem arredondamento de card. A arte do hero é uma ameba orgânica em WebGL, implementada em `src/components/hero-amoeba.tsx`, com um hemisfério de 144 × 96 segmentos e um campo de ondas 128 × 128 em `src/components/orb-wave-field.ts`. A altura e a velocidade persistem entre quadros; a integração usa passo fixo de 120Hz e uma textura RG16 codificada em RGBA8, sem depender de extensões float. A superfície usa exclusivamente o roxo principal #A63DFF, o lilás de apoio #CFA7FF do manual enviado em11/11/2026, branco #F5F4F8 e sombras derivadas do preto #08080C. O lilás específico da ameba fica no token local --amoeba-lilac; luz, relevo e reflexos usam a paleta da marca. O movimento injeta pressão positiva e deixa um rastro contínuo de ondas amortecidas. Clicar e arrastar inverte a pressão. Gradientes da simulação deslocam as cores e produzem a iluminação, sem manchas brancas ou escuras pintadas sob o cursor. O corpo responde à posição e à velocidade do mouse com uma mola viscosa: o hover alonga o contorno no sentido da força e comprime levemente o eixo oposto, sem exigir clique. Uma elevação radial ampla acompanha a proximidade. Ao sair, a força cessa na última posição e as ondas continuam se propagando. Em repouso, flutuação de cerca de 4–8px, respiração e lobos discretos mantêm a silhueta orgânica; perturbações autônomas leves mantêm a superfície viva. Dithering fino evita bandas de cor. A composição reserva a coluna da direita para a ameba e, no mobile, uma área abaixo das ações. Um gradiente estático em CSS mantém a forma disponível sem JavaScript ou WebGL. O SVG anterior permanece no repositório como asset de arquivo.
 
 ## Components
 
@@ -204,7 +205,7 @@ A capa base tem proporção (1.625), texto central grande e rótulo explícito d
 
 ### Hero, monogram and footer
 
-A escultura decorativa tem flutuação de (9s), variando de (-2deg) a (2deg) e até (-18px) na vertical. O parallax GSAP desloca a arte até (90px), rotação (5deg), scrub (1). Revelações usam deslocamento (28px), duração (.85s), executadas uma vez; entrada do hero usa (1.15s) com stagger (.1s), quando a página inicia próxima do topo.
+A ameba usa propagação de ondas com memória, amortecimento e resposta do corpo por mola. Velocidade e trajetória do mouse determinam a intensidade e o rastro. O retorno não desloca a fonte para o centro. O campo, a mola e o deslocamento flutuante são zerados ao ativar movimento reduzido. A coordenada do mouse compensa o deslocamento do corpo, e os polos preservam continuidade da malha. Não há parallax nem transformação vinculada à rolagem na hero. A renderização pausa fora da tela e com a aba oculta; em movimento reduzido a forma fica estática e ignora o ponteiro. O canvas limita a resolução a 1024px e o DPR a 1.5; no touch, limita a animação a 30 fps sem interceptar gestos. Revelações usam deslocamento (28px), duração (.85s), executadas uma vez; entrada do hero usa (1.15s) com stagger (.1s), quando a página inicia próxima do topo.
 
 O monograma L. é tipográfico, com órbita elíptica de borda line. O rodapé segue o fecho centralizado aprovado a partir da referência ADR.IA: chamada grotesca maiúscula, pergunta serifada abaixo, descrição e contato. Padding da chamada (124px 0 110px), reduzido para (90px 0 76px) no mobile; navegação e linhas legais ficam abaixo de uma divisória.
 

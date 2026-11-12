@@ -21,7 +21,6 @@ export function Motion({children}:{children:React.ReactNode}) {
     scope.querySelectorAll<HTMLElement>('[data-reveal]').forEach(el=>{
      gsap.fromTo(el,{y:28,opacity:0},{y:0,opacity:1,duration:.85,ease:'power3.out',clearProps:'all',scrollTrigger:{trigger:el,start:'top 92%',once:true}});
     });
-    gsap.to(scope.querySelector('.hero-art-inner'),{y:90,rotation:5,ease:'none',scrollTrigger:{trigger:scope.querySelector('.hero'),start:'top top',end:'bottom top',scrub:1}});
     gsap.fromTo(scope.querySelector('.manifesto-rule'),{scaleX:0},{scaleX:1,duration:1.2,ease:'power3.out',scrollTrigger:{trigger:'.manifesto',start:'top 75%',once:true}});
    });
    let disposeLenis=()=>{};

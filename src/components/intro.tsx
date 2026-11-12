@@ -1,13 +1,13 @@
 import { ArrowDown, ArrowUpRight, Code2, Figma, Hexagon, Sparkles, Triangle, Braces } from 'lucide-react';
 import { ContactLink } from './ui';
-import { Sculpture } from './sculpture';
+import { HeroAmoeba } from './hero-amoeba';
 
 export function Hero(){return <section id="inicio" className="hero" aria-labelledby="hero-title"><div className="container hero-grid">
  <div className="hero-copy"><p className="hero-label" data-reveal>CRIAÇÃO DE SITES • LANDING PAGES • DESIGN</p><h1 id="hero-title"><span className="hero-line"><span>Experiências digitais</span></span><span className="hero-line"><span>que fazem seu negócio</span></span><span className="hero-line hero-accent"><span>avançar.<ArrowUpRight aria-hidden="true" /></span></span></h1>
  <p className="hero-description">Crio sites profissionais, rápidos e personalizados para valorizar sua marca, transmitir confiança e transformar visitantes em oportunidades de negócio.</p>
  <div className="hero-actions"><ContactLink>Solicitar orçamento</ContactLink><a className="text-link" href="#projetos">Conhecer projetos <ArrowUpRight size={19} aria-hidden="true" /></a></div>
  </div>
- <div className="hero-art"><div className="hero-art-inner"><Sculpture /></div><span className="art-caption">Design com intenção.<br/>Tecnologia com direção.</span></div>
+ <div className="hero-art"><div className="hero-art-inner"><HeroAmoeba /></div><span className="art-caption">Design com intenção.<br/>Tecnologia com direção.</span></div>
  <div className="hero-bottom"><p>Estratégia <span/> Design <span/> Desenvolvimento</p><a href="#manifesto" aria-label="Continue explorando: ir para o manifesto"><span>Continue explorando</span><ArrowDown size={17} aria-hidden="true" /></a></div>
  </div></section>;}
 const technologies=[{name:'HTML',Icon:Code2},{name:'CSS',Icon:Braces},{name:'JavaScript',Icon:Hexagon},{name:'Figma',Icon:Figma},{name:'Vercel',Icon:Triangle},{name:'IA',Icon:Sparkles}];
